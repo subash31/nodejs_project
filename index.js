@@ -4,10 +4,10 @@ const app = express();
 app.use(express.static('public'));
 app.set('viewengine','ejs');
 
-app.get('/',(req,res) =>{
-    res.render('home');
-})
-
+// app.get('/',(req,res) =>{
+//     res.render('home');
+// })
+console.log("hello world");
 app.get('/products/:id',(req,res)=>{
  console.log(req.params.id);
     var data = [
